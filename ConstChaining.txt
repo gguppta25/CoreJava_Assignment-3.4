@@ -1,0 +1,21 @@
+public class ConstChaining {
+	ConstChaining()	 // default constructor 1
+    {
+        System.out.println("default");
+    }
+	ConstChaining(int x) // parameterized constructor 2
+    {
+        this();         // invokes default constructor
+        System.out.println(x);
+    }
+	ConstChaining(int x, int y)	    // parameterized constructor 3
+    {
+        this(5);	        // invokes parameterized constructor 2
+        System.out.println(x * y);
+    }
+ 
+    public static void main(String args[])
+    {
+        new ConstChaining(8, 10);	// invokes parameterized constructor 3
+    }
+}

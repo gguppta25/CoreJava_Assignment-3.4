@@ -1,0 +1,21 @@
+
+public class staticexample {
+	int rollno;  
+	   String name;  
+	   static String college ="ACADGILD";  
+	     
+	   staticexample(int r,String n){  
+	   rollno = r;  
+	   name = n;  
+	   }  
+	 void display (){System.out.println(rollno+" "+name+" "+college);}  
+	  
+	 public static void main(String args[]){  
+		 staticexample s1 = new staticexample(1,"Karan");  
+		 staticexample s2 = new staticexample(2,"Aryan");  
+	   
+	 s1.display();  
+	 s2.display();  
+	 }  
+
+}
